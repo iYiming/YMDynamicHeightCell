@@ -69,8 +69,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (CustomCell *) cellForIndexPath:(NSIndexPath *) indexPath
-{
+- (CustomCell *)cellForIndexPath:(NSIndexPath *) indexPath {
     CustomCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     
     
@@ -85,13 +84,11 @@
 
 #pragma mark -
 #pragma mark -UITableViewDataSource UITableViewDelegate
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return personsArray.count;
 }
 
-- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
     
     PersonInfo *personInfo = [personsArray objectAtIndex:indexPath.row];
@@ -103,8 +100,7 @@
     return cell;
 }
 
-- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self cellForIndexPath:indexPath];
     CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     

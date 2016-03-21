@@ -10,9 +10,9 @@
 
 @interface PersonInfo : NSObject
 
-@property (nonatomic,strong) NSString *photoUrlStr;
-@property (nonatomic,strong) NSString *name;
-@property (nonatomic,strong) NSString *place;
-@property (nonatomic,strong) NSString *introduction;
+@property (nonatomic, copy) NSString *photoUrlStr;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *place;
+@property (nonatomic, copy) NSString *introduction;
 
 @end
