@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *placeLabel;
